@@ -87,7 +87,7 @@ public class ViewModel : INotifyPropertyChanged
 
                 EnemyStatsResult = $"damage:{_modelStats.Damage1} health:{_modelStats.Health1}";
             },
-            canExecute: _=> true );
+        canExecute: _=> true );
         
         RerollCommand = new RelayCommand(execute: _ => RandomReroll(), canExecute: _=> true);
         FightCommand = new RelayCommand(execute :_ => Fight(),canExecute: _=> true);
